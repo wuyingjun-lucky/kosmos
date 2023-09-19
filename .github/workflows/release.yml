@@ -50,5 +50,5 @@ jobs:
         with:
           files: |
             _output/release/kosmosctl-${{ matrix.os }}-${{ matrix.arch }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.TOKEN }}
