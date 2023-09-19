@@ -3,7 +3,7 @@ GOARCH ?= $(shell go env GOARCH)
 VERSION ?= '$(shell hack/version.sh)'
 
 # Images management
-REGISTRY?="ghcr.io/kosmos-io"
+REGISTRY?="ghcr.io/wuyingjun-lucky"
 REGISTRY_USER_NAME?=""
 REGISTRY_PASSWORD?=""
 REGISTRY_SERVER_ADDRESS?=""
