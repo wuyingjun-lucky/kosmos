@@ -15,7 +15,6 @@ jobs:
           fetch-depth: 0
       - name: Set up qemu
         uses: docker/setup-qemu-action@v2
-        visibility: public
       - name: Login registry
         run: |
           echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
