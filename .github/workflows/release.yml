@@ -14,15 +14,17 @@ jobs:
     # job's name
     name: release kosmosctl for linux&darwin
 
+    permissions: write-all
+
     # the type of machine to run the job on
     runs-on: ubuntu-20.04
 
-    # create a build matrix for jobs
-    strategy:
-      fail-fast: false
-      matrix:
-        os: linux
-        arch: amd64
+#    # create a build matrix for jobs
+#    strategy:
+#      fail-fast: false
+#      matrix:
+#        os: [linux]
+#        arch: [amd64]
 
     # create steps
     steps:
@@ -48,5 +50,5 @@ jobs:
             _output/release/kosmosctl-linux-arm64
             _output/release/kosmosctl-darwin-amd64
             _output/release/kosmosctl-darwin-arm64
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.TOKEN }}
