@@ -46,6 +46,7 @@ jobs:
       # step4: create release
       - name: release
         uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
             _output/release/kosmosctl-${{ matrix.os }}-${{ matrix.arch }}

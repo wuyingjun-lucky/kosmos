@@ -110,9 +110,9 @@ endif
 .PHONY: release
 release:
 	@make release-kosmosctl GOOS=linux GOARCH=amd64
-	@make release-kosmosctl GOOS=linux GOARCH=arm64
-	@make release-kosmosctl GOOS=darwin GOARCH=amd64
-	@make release-kosmosctl GOOS=darwin GOARCH=arm64
+#	@make release-kosmosctl GOOS=linux GOARCH=arm64
+#	@make release-kosmosctl GOOS=darwin GOARCH=amd64
+#	@make release-kosmosctl GOOS=darwin GOARCH=arm64
 
 release-kosmosctl:
 	hack/release.sh kosmosctl ${GOOS} ${GOARCH}
