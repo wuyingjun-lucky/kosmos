@@ -1,11 +1,16 @@
-# Workflow's name
-name: release kosmosctl for linux&darwin
+## Workflow's name
+#name: release kosmosctl for linux&darwin
+#
+## Workflow's trigger
+#on:
+#  push:
+#    tags:
+#      - "v*.*.*"
 
-# Workflow's trigger
 on:
-  push:
-    tags:
-      - "v*.*.*"
+  release:
+    types:
+      - published
 
 # Workflow's jobs
 jobs:
